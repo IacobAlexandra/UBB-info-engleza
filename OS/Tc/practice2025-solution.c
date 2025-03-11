@@ -7,6 +7,18 @@
 //compile with: gcc -Wall -g practice2025-solution.c -o exe
 //run with: valgrind ./exe
 
+/* 
+* Read from standard input:
+    test0123456789
+    another TEST
+    FiNaL_tEsT
+    
+ * Expected result: (in out.txt file which will be created when running the program)
+    TEST0123456789
+    ANOTHER test
+    fInAl_TeSt
+*/
+
 int main() {
     char* s[3];
     int i, j, fd,offset;
